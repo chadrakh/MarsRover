@@ -1,7 +1,7 @@
 # Mars Rover Application
 
-### Requirements
-The project is to create a program to control rovers on the surface of Mars. The surface is represented by a plateau, which will be a 4-sided grid in this context.
+### Brief
+Create a program to control rovers on the surface of Mars, which is represented by a plateau, which will be a 4-sided grid in this context.
 
 <br />
 
@@ -28,8 +28,14 @@ The project is to create a program to control rovers on the surface of Mars. The
     - User is prompted to give instructions to move the rover
     - Program returns new position of rover
     
-
     - *User is able to continue loop of new instructions or end program*
+
+- Classes to consider:
+  - Rover
+  - Plateau
+  - Coordinate (to pass into plateau)
+
+![Basic Class Structure](Documentation/Resources/BasicClassStructure.png)
 
 <br />
 
