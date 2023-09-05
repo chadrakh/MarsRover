@@ -3,6 +3,8 @@
 ### Brief
 Create a program to control rovers on the surface of Mars, which is represented by a plateau, which will be a 4-sided grid in this context.
 
+The Minimum Viable Product (MVP) has the functionality to create a rover and plateau, place a rover and instruct the rover.
+
 <br />
 
 #### Key Features
