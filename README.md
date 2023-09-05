@@ -70,6 +70,8 @@ Below are examples of test cases that describe the expected output when given a 
 
 Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.
 
+The designation is as follows "MethodName_ExpectedBehavior_StateUnderTest", for example "generateCodeName_ReturnsCodeName_IfRoverIsInstantiated".
+
 ### Future Implementations
 - Can this be visualised as a grid in the console or as a web application?
 
