@@ -6,6 +6,11 @@ public class VehicleTest {
     private final Rover ROVER = new Rover(RoverType.SURFACE, "0 0");
 
     @Test
+    public void setId_SetsUniqueId_WhenInstantiated() {
+
+    }
+
+    @Test
     public void moveTo_ReturnsNewPosition_IfInstructionIsValid() {
 
     }
