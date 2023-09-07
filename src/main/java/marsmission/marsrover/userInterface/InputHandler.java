@@ -1,4 +1,9 @@
-package marsmission.marsrover.validation;
+package marsmission.marsrover.userInterface;
+
+import marsmission.marsrover.model.Rover;
+import marsmission.marsrover.model.RoverManager;
+
+import java.util.Arrays;
 
 public class InputHandler {
     public int[] parsePosition(String inputPosition) {
@@ -15,22 +20,28 @@ public class InputHandler {
     }
 
     public char parseDirection(String inputDirection) {
-        switch (inputDirection.toLowerCase()) {
-            case "north" -> {
+        switch (inputDirection.toUpperCase()) {
+            case "NORTH" -> {
                 return 'N';
             }
-            case "east" -> {
+            case "EAST" -> {
                 return 'E';
             }
-            case "south" -> {
+            case "SOUTH" -> {
                 return 'S';
             }
-            case "west" -> {
+            case "WEST" -> {
                 return 'W';
             }
             default -> {
                 throw new IllegalArgumentException("Invalid direction: " + inputDirection);
             }
         }
+    }
+
+    public String handleRoverInstruction(Rover rover, char newDirection, int[] newPosition) {
+        rover.moveTo(newDirection, newPosition);
+
+        return newDirection + " " + Arrays.toString(rover.getPosition());
     }
 }
