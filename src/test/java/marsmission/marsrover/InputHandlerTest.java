@@ -1,2 +1,4 @@
-package marsmission.marsrover;public class InputHandlerTest {
+package marsmission.marsrover;
+
+public class InputHandlerTest {
 }
