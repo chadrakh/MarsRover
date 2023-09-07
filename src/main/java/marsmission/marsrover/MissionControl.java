@@ -1,7 +1,10 @@
-package org.example;
+package marsmission.marsrover;
 
-public class Main {
+import marsmission.marsrover.userInterface.ConsoleMessenger;
+
+public class MissionControl {
+    private static final ConsoleMessenger CONSOLE_APP = new ConsoleMessenger();
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CONSOLE_APP.startApplication();
     }
 }
