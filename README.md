@@ -50,7 +50,7 @@ The Minimum Viable Product (MVP) has the functionality to create a rover and pla
   - Attributes
     - Sector: A string identifier assigned to each instance of the class (e.g. Sector-1)
     - Width: The size of the grid ("plateau") along the X-axis
-    - Height: The size of the grid ("plateau") along the Y-axis
+    - Length: The size of the grid ("plateau") along the Y-axis
 
 <br />
 
