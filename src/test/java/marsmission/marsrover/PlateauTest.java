@@ -1,2 +1,4 @@
-package marsmission.marsrover;public class PlateauTest {
+package marsmission.marsrover;
+
+public class PlateauTest {
 }
