@@ -1,7 +1,6 @@
 package marsmission.marsrover;
 
 import marsmission.marsrover.model.Rover;
-import marsmission.marsrover.model.VehicleType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
