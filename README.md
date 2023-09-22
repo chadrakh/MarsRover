@@ -3,9 +3,9 @@
 The Mars Rover is a program in which a rover is able to traverse the surface of Mars, confined to plateaus which are four-sided grids on the surface that have been defined as areas for collecting samples for research.
 A user is able to define a plateau, deploy a rover and then feed instructs to the rover to control its journey across the plateau.
 
-<br />
+<br/>
 
-### User Guide
+## User Guide
 1. The program will display an interface within the console
 
 2. The program will prompt the user to enter details for the plateau and rover
@@ -30,7 +30,7 @@ A user is able to define a plateau, deploy a rover and then feed instructs to th
 
 *If rover coordinates exceed the dimensions of the plateau, the rover will execute instructions to the best of its ability and return any remaining instructions.
 
-<br />
+<br/>
 
 ### Classes
 `MissionControl` serves as the entry point for the application.
@@ -43,26 +43,27 @@ The View `ConsoleMessenger` functions as the view, handling the user interface l
 
 Controllers `InputHandler` and `RoverHandler`, manage user input, processing it as it passes through the view and enabling the core functionality of the application.
 
-<br />
+<br/>
 
 `VehicleType` is an enumeration describing the type of Vehicle (i.e. surface, underwater, etc.)
 
 `Identity` is a class for generating identifiers of type `Long` within the program.
 
-<br />
+<br/>
+<br/>
 
 ![UML Diagram](Assets/Mars-Rover-UML.png)
 
-<br />
+<br/>
 
 ## Example Test Cases
 The examples below describe the expected input and output in various cases.
 
 The program will receive three lines of input, namely Input A, Input B and Input C respectively.
 
-`A` describes the dimensions of the plateau as lengths of the X and Y axes respectively. <br />
-`B` describes the start position of the rover as coordinates (x, y). <br />
-`C` is a string of alphabetical characters instructing the rover across the plateau. <br />
+`A` describes the dimensions of the plateau as lengths of the X and Y axes respectively. <br/>
+`B` describes the start position of the rover as coordinates (x, y). <br/>
+`C` is a string of alphabetical characters instructing the rover across the plateau. <br/>
 
 
 | Test Case | Input A | Input B | Input C | Expected Output |
