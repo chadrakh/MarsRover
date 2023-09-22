@@ -36,6 +36,14 @@ The Minimum Viable Product (MVP) has the functionality to create a rover and pla
   - *User is able to continue in the loop of providing instructions or end program*
 
 #### Classes
+- MissionControl
+  - The entry point of the application
+
+- ConsoleMessenger
+  - desc
+
+- InputHandler
+  - desc
 
 - Rover
   - Attributes
@@ -54,7 +62,8 @@ The Minimum Viable Product (MVP) has the functionality to create a rover and pla
 
 <br />
 
-![UML Diagram](Assets/Mars-Rover-UML.jpg)
+
+![UML Diagram](Assets/Mars-Rover-UML.png)
 
 <br />
 
