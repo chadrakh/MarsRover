@@ -59,11 +59,12 @@ The Minimum Viable Product (MVP) has the functionality to create a rover and pla
 <br />
 
 ### Example Test Cases
-Below are examples of test cases that describe the expected outputs in various scenarios.
+The examples below describe the expected input and output in various cases.
 
-The first line, Input A, describes the dimensions of the plateau as lengths of the X and Y axes respectively.
-The second line, Input B, describes the start position of the rover as coordinates (x, y).
-The third line, Input C, is a string of alphabetical characters instructing the rover across the plateau.
+The first line, Input A, describes the dimensions of the plateau as lengths of the X and Y axes respectively. <br />
+The second line, Input B, describes the start position of the rover as coordinates (x, y). <br />
+The third line, Input C, is a string of alphabetical characters instructing the rover across the plateau. <br />
+
 
 | Test Case | Input A | Input B | Input C | Expected Output |
 |-----------|---------|---------|---------|-----------------|
@@ -73,13 +74,11 @@ The third line, Input C, is a string of alphabetical characters instructing the 
 | 4         |         |         |         |                 |
 | 5         |         |         |         |                 |
 
-Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.
+*Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.*
 
-The designation is as follows "MethodName_ExpectedBehavior_StateUnderTest", for example "generateCodeName_ReturnsCodeName_IfRoverIsInstantiated".
 
 ### Future Implementations
 - Can this be visualised as a grid in the console or as a web application?
-
 
 - Can multiple rovers be sent out?
   - How will they be controlled?
