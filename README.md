@@ -3,8 +3,6 @@
 The Mars Rover is a program in which a rover is able to traverse the surface of Mars, confined to plateaus which are four-sided grids on the surface that have been defined as areas for collecting samples for research.
 A user is able to define a plateau, deploy a rover and then feed instructs to the rover to control its journey across the plateau.
 
-<br/>
-
 ### Table of Contents
 The documentation of Mars Rover includes:
 
@@ -16,6 +14,8 @@ The documentation of Mars Rover includes:
 - [Scalability](#future-implementations)
 
 </u>
+
+<br/>
 
 ## User Guide
 1. The program will display an interface within the console
