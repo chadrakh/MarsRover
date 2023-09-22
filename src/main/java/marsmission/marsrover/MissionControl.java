@@ -1,6 +1,6 @@
-package marsmission.marsrover;
+package marsmission.marsrover.app;
 
-import marsmission.marsrover.userInterface.ConsoleMessenger;
+import marsmission.marsrover.view.ConsoleMessenger;
 
 public class MissionControl {
     private static final ConsoleMessenger CONSOLE_APP = new ConsoleMessenger();

@@ -1,4 +1,4 @@
-package marsmission.marsrover.model;
+package marsmission.marsrover.enums;
 
 public enum VehicleType {
     AERIAL,

@@ -1,11 +1,13 @@
-package marsmission.marsrover.model;
+package marsmission.marsrover.handlers;
+
+import marsmission.marsrover.model.Rover;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RoverManager {
+public class RoverHandler {
     private final Map<Integer, Rover> ROVER_MAP = new HashMap<>();
 
     public void addRover(Rover rover) {

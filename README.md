@@ -54,19 +54,24 @@ The Minimum Viable Product (MVP) has the functionality to create a rover and pla
 
 <br />
 
-![UML Diagram](Documentation/Resources/ProjectUML.png)
+![UML Diagram](Assets/Mars-Rover-UML.jpg)
+
 <br />
 
 ### Example Test Cases
-Below are examples of test cases that describe the expected output when given a specific start point (Input A) and instruction (Input B).
+Below are examples of test cases that describe the expected outputs in various scenarios.
 
-| Test Case | Input A    | Input B | Expected Output |
-|-----------|------------|---------|-----------------|
-| 1         | 5 5        | 1 2 N   | 1 3 N           |
-| 2         | LMLMLMLMM  | 3 3 E   | 5 1 E           |
-| 3         | MMRMMRMRRM |         |                 |
-| 4         |            |         |                 |
-| 5         |            |         |                 |
+The first line, Input A, describes the dimensions of the plateau as lengths of the X and Y axes respectively.
+The second line, Input B, describes the start position of the rover as coordinates (x, y).
+The third line, Input C, is a string of alphabetical characters instructing the rover across the plateau.
+
+| Test Case | Input A | Input B | Input C | Expected Output |
+|-----------|---------|---------|---------|-----------------|
+| 1         |         |         |         |                 |
+| 2         |         |         |         |                 |
+| 3         |         |         |         |                 |
+| 4         |         |         |         |                 |
+| 5         |         |         |         |                 |
 
 Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.
 
