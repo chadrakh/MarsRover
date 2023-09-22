@@ -6,10 +6,16 @@ A user is able to define a plateau, deploy a rover and then feed instructs to th
 <br/>
 
 ### Table of Contents
-[User Guide](#user-guide)
-[Classes](#classes)
-[Testing](#example-test-cases)
-[Scalability](#future-implementations)
+The documentation of Mars Rover includes:
+
+<u>
+
+- [User Guide](#user-guide)
+- [Class Structure](#class-structure)
+- [Testing](#example-test-cases)
+- [Scalability](#future-implementations)
+
+</u>
 
 ## User Guide
 1. The program will display an interface within the console
@@ -38,7 +44,7 @@ A user is able to define a plateau, deploy a rover and then feed instructs to th
 
 <br/>
 
-### Classes
+### Class Structure
 `MissionControl` serves as the entry point for the application.
 
 Models `Plateau`, `Vehicle`, and `Rover`, are responsible for managing data associated with the planetary surface (plateau) and the vehicle (rover) traversing it.
