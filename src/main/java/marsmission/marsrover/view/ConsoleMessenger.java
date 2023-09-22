@@ -1,15 +1,16 @@
-package marsmission.marsrover.userInterface;
+package marsmission.marsrover.view;
 
+import marsmission.marsrover.controller.InputHandler;
 import marsmission.marsrover.model.Rover;
-import marsmission.marsrover.model.RoverManager;
-import marsmission.marsrover.surface.Plateau;
+import marsmission.marsrover.controller.RoverHandler;
+import marsmission.marsrover.model.Plateau;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ConsoleMessenger {
     public Plateau plateau;
-    private final RoverManager ROVER_MANAGER = new RoverManager();
+    private final RoverHandler ROVER_MANAGER = new RoverHandler();
     private final InputHandler INPUT_HANDLER = new InputHandler();
     
     Scanner scanner = new Scanner(System.in);    

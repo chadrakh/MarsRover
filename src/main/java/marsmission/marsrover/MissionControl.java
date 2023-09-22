@@ -1,4 +1,4 @@
-package marsmission.marsrover.app;
+package marsmission.marsrover;
 
 import marsmission.marsrover.view.ConsoleMessenger;
 

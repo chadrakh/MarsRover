@@ -1,4 +1,4 @@
-package marsmission.marsrover.surface;
+package marsmission.marsrover.model;
 
 public class Plateau {
     private static int existingInstances = 0;
