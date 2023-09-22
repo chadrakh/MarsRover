@@ -5,6 +5,12 @@ A user is able to define a plateau, deploy a rover and then feed instructs to th
 
 <br/>
 
+### Table of Contents
+[User Guide](#user-guide)
+[Classes](#classes)
+[Testing](#example-test-cases)
+[Scalability](#future-implementations)
+
 ## User Guide
 1. The program will display an interface within the console
 
@@ -56,8 +62,10 @@ Controllers `InputHandler` and `RoverHandler`, manage user input, processing it 
 
 <br/>
 
-## Example Test Cases
-The examples below describe the expected input and output in various cases.
+## Testing
+### Example Test Cases
+
+The examples outline the expected input and output in various cases.
 
 The program will receive three lines of input, namely Input A, Input B and Input C respectively.
 
@@ -77,10 +85,14 @@ The program will receive three lines of input, namely Input A, Input B and Input
 *Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.*
 
 
-## Future Implementations
-- Can this be visualised as a grid in the console or as a web application?
+## Scalability
+### Future Implementations
 
+- Can this be visualised as a grid in the console or as a web application?
+- 
 - Can multiple rovers be sent out?
   - How will they be controlled?
   - How will the user select which rover to control or view their positions?
   - How will instructions be validated to prevent rovers colliding with each other?
+
+- Implement generics within RoverHandler to perform operations on any child of Vehicle?
