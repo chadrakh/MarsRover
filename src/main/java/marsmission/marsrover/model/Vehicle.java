@@ -1,23 +1,25 @@
 package marsmission.marsrover.model;
 
+import java.util.Arrays;
+
 public abstract class Vehicle {
     final long ID;
-    final String CODENAME;
     final VehicleType TYPE;
+    final String CODENAME;
     char direction;
-    int[] position;
+    int[] coordinate;
 
-    public Vehicle(VehicleType type, char direction, int[] position) {
+    public Vehicle(VehicleType type, char direction, int[] coordinate) {
         Identifier identifier = new Identifier();
         this.ID = identifier.generateId();
-        this.CODENAME = generateCodeName();
         this.TYPE = type;
+        this.CODENAME = generateCodeName();
         this.direction = direction;
-        this.position = position;
+        this.coordinate = coordinate;
     }
 
     private String generateCodeName() {
-        return getType().toString() + getId();
+        return getType().toString() + "-" + getId();
     }
 
     public void displayInfo() {
@@ -30,12 +32,12 @@ public abstract class Vehicle {
         return ID;
     }
 
-    public String getCodeName() {
-        return CODENAME;
-    }
-
     public VehicleType getType() {
         return TYPE;
+    }
+
+    public String getCodeName() {
+        return CODENAME;
     }
 
     public char getDirection() {
@@ -46,16 +48,28 @@ public abstract class Vehicle {
         this.direction = direction;
     }
 
-    public int[] getPosition() {
-        return position;
+    public int[] getCoordinate() {
+        return coordinate;
     }
 
-    private void setPosition(int[] position) {
-        this.position = position;
+    public void setCoordinate(int[] coordinate) {
+        this.coordinate = coordinate;
     }
 
-    public void moveTo(char direction, int[] position) {
-        setDirection(direction);
-        setPosition(position);
+    public String getPosition() {
+        char direction = getDirection();
+        String formattedCoordinate = formatCoordinate(getCoordinate());
+
+        return formattedCoordinate + " " + direction;
+    }
+
+    private String formatCoordinate(int[] coordinate) {
+        StringBuilder coordinateBuilder = new StringBuilder();
+
+        for (int position : coordinate) {
+            coordinateBuilder.append(" ").append(position);
+        }
+
+        return coordinateBuilder.toString().trim();
     }
 }
