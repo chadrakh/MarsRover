@@ -1,7 +1,5 @@
 package marsmission.marsrover.model;
 
-import java.util.Arrays;
-
 public abstract class Vehicle {
     final long ID;
     final VehicleType TYPE;
