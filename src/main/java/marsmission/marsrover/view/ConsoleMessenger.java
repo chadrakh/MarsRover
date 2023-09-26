@@ -6,7 +6,6 @@ import marsmission.marsrover.model.Rover;
 import marsmission.marsrover.controller.RoverHandler;
 import marsmission.marsrover.model.Plateau;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ConsoleMessenger {
@@ -33,12 +32,6 @@ public class ConsoleMessenger {
         viewRovers();
         
         actionMenu();
-    }
-
-    public void endApplication() {
-        scanner.close();
-        System.out.println("\nEnding session...");
-        System.exit(0);
     }
 
     public void actionMenu() {
@@ -212,7 +205,7 @@ public class ConsoleMessenger {
             System.out.println("Deployed Rovers: " + ROVER_HANDLER.findAll().size());
 
             for (String codename : ROVER_HANDLER.findAll()) {
-                System.out.println(codename + "\n");
+                System.out.println(codename);
             }
         }
     }
@@ -239,7 +232,7 @@ public class ConsoleMessenger {
             if (action.equalsIgnoreCase("Y")) {
                 instructRover(targetRover);
             } else {
-                returnToMenu();
+                actionMenu();
             }
         } else {
             System.out.println("""
@@ -250,5 +243,11 @@ public class ConsoleMessenger {
 
             actionMenu();
         }
+    }
+
+    public void endApplication() {
+        scanner.close();
+        System.out.println("\nEnding session...");
+        System.exit(0);
     }
 }
