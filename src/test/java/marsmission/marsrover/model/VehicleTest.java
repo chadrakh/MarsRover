@@ -1,4 +1,4 @@
-package marsmission.marsrover;
+package marsmission.marsrover.model;
 
 import marsmission.marsrover.model.Rover;
 import org.junit.jupiter.api.Test;
@@ -6,22 +6,21 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class VehicleTest {
-    private final Rover ROVER = new Rover('N', new int[]{0,0});
+    private Rover rover = new Rover('N', new int[]{1,2});
 
     @Test
-    public void setId_AssignsId_IfRoverIsInstantiated() {
-        boolean result = !(String.valueOf(ROVER.getId()).isBlank());
+    public void generateCodeName_ReturnsTypeHyphenatedWithId() {
+            String expected = "SURFACE-" + rover.getId();
+            String result = rover.getCodeName();
 
-        assertTrue(result);
+            assertEquals(expected, result);
     }
 
     @Test
-    public void moveTo_ReturnsNewPosition_IfInstructionIsValid() {
+    public void getPosition_ReturnsFormattedCoordinateAndDirection() {
+        String expected = "1 2 N";
+        String result = rover.getPosition();
 
-    }
-
-    @Test
-    public void moveTo_ReturnsNewPositionAndRemainingInstruction_IfInstructionExceedsPlateauLimit() {
-
+        assertEquals(expected, result);
     }
 }
