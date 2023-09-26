@@ -5,26 +5,52 @@ import marsmission.marsrover.model.Rover;
 import java.util.*;
 
 public class RoverHandler {
-    private final Map<Integer, Rover> ROVER_MAP = new HashMap<>();
+    private final Map<Long, Rover> ROVER_MAP = new HashMap<>();
 
-    public void addRover(Rover rover) {
+    public void add(Rover rover) {
         ROVER_MAP.put(rover.getId(), rover);
     }
 
-    public Rover findById(int id) {
-        return ROVER_MAP.get(id);
-    }
+    public void remove(String targetCodeName) {
+        Rover targetRover = null;
 
-    public Rover findByCodeName(String codename) {
         for (Rover rover : ROVER_MAP.values()) {
-            String expectedCodename = rover.getType().toString() + "Rover-" + rover.getId();
+            String expectedCodename = rover.getType().toString() + rover.getId();
 
-            if (expectedCodename.equalsIgnoreCase(codename)) {
-                return rover;
-            } else {
-                throw new IllegalArgumentException("Rover instruction error. Target rover does not exist.");
+            if (expectedCodename.equalsIgnoreCase(targetCodeName)) {
+                targetRover = rover;
+                break;
             }
         }
+
+        if (targetRover == null) {
+            System.out.println(
+                    "Error!" +
+                    "\n" +
+                    "Vehicle " + targetCodeName + " does not exist." +
+                    "Please check the codename and try again."
+            );
+        } else {
+            ROVER_MAP.remove(targetRover.getId());
+            System.out.println("Rover " + targetCodeName + " has been removed.");
+        }
+    }
+
+    public Rover find(String targetCodeName) {
+        for (Rover rover : ROVER_MAP.values()) {
+            String expectedCodename = rover.getType().toString() + "-" + rover.getId();
+
+            if (expectedCodename.equalsIgnoreCase(targetCodeName)) {
+                return rover;
+            }
+        }
+
+        System.out.println(
+                "Error! Target vehicle does not exist." +
+                        "\n" +
+                        "Please enter a valid codename for a deployed vehicle."
+        );
+
         return null;
     }
 
