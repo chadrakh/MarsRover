@@ -80,13 +80,13 @@ The program will receive three lines of input, namely Input A, Input B and Input
 `C` is a string of alphabetical characters instructing the rover across the plateau. <br/>
 
 
-| Test Case | Input A | Input B | Input C   | Expected Output |
-|-----------|---------|---------|-----------|-----------------|
-| 1         | 5 5     | 1 2 N   | LMLMLMLMM | 1 3 N           |
-| 2         |         |         |           |                 |
-| 3         |         |         |           |                 |
-| 4         |         |         |           |                 |
-| 5         |         |         |           |                 |
+| Test Case | Input A | Input B | Input C    | Expected Output |
+|-----------|---------|---------|------------|-----------------|
+| 1         | 5 5     | 1 2 N   | LMLMLMLMM  | 1 3 N           |
+| 2         | 5 5     | 3 3 E   | MMRMMRMRRM | 5 1 E           |
+| 3         |         |         |            |                 |
+| 4         |         |         |            |                 |
+| 5         |         |         |            |                 |
 
 *Test cases will follow the naming convention as outlined within [this article](https://www.softwaretestingmagazine.com/knowledge/how-to-choose-the-right-name-for-unit-tests/) for explicit test names that describe the expected result and the conditions required to achieve them.*
 
